@@ -1,101 +1,147 @@
-
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>TCP / IP</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>TCP / IP</title>
+</head>
 
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">TCP / IP</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Начало</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Описание</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<body>
 
-    <main role="main" class="container mt-5">
-      <h1 class="mt-5">Стек протоколов TCP / IP</h1>
-      <p class="lead">TCP/IP — сетевая модель передачи данных, представленных в цифровом виде. Модель описывает способ передачи данных от источника информации к получателю. В модели предполагается прохождение информации через четыре уровня, каждый из которых описывается правилом (протоколом передачи).</p>
-      <h2 class="mt-5">История создания</h2>
-      <p class="lead">Стек протоколов TCP/IP был создан на основе NCP (Network Control Protocol) группой разработчиков под руководством Винтона Серфа в 1972 году. В июле 1976 года Винт Серф и Боб Кан впервые продемонстрировали передачу данных с использованием TCP по трём различным сетям. Пакет прошел по следующему маршруту: Сан-Франциско — Лондон — Университет Южной Калифорнии. К концу своего путешествия пакет проделал 150 тысяч км, не потеряв ни одного бита. В 1978 году Серф, Джон Постел и Дэнни Кохэн[en] решили выделить в TCP две отдельные функции: TCP и IP (англ. Internet Protocol, межсетевой протокол). TCP был ответственен за разбивку сообщения на датаграммы (англ. datagram) и соединение их в конечном пункте отправки. IP отвечал за передачу (с контролем получения) отдельных датаграмм. Вот так родился современный протокол Интернета. А с 1 января 1983 года ARPANET перешла на новый протокол. Этот день принято считать официальной датой рождения Интернета.</p>
-      <h2 class="mt-5">Формальная спецификация и стандарты</h2>
-      <p class="lead">Технические стандарты, лежащие в основе набора TCP/IP протоколов, были переданы Инженерному совету Интернета (IETF). Характеристикой архитектуры Internet Protocol Suite является широкое разделение на рабочие области для протоколов, составляющих его основную функциональность. Определяющей спецификацией пакета является RFC 1122, которая в общих чертах описывает четыре уровня абстракции. Они выдержали испытание временем, поскольку IETF никогда не изменяла эту структуру. Как таковая модель сети TCP/IP предшествует модели OSI, более всеобъемлющей эталонной структуре для общих сетевых систем.</p>
-      <h2 class="mt-5">Уровни стека TCP/IP</h2>
-      <ul class="list-group mt-5 mb-5">
-        <li class="list-group-item active">Стек протоколов TCP/IP включает в себя четыре уровня:</li>
-        <li class="list-group-item">Прикладной уровень</li>
-        <li class="list-group-item">Транспортный уровень</li>
-        <li class="list-group-item">Межсетевой уровень</li>
-        <li class="list-group-item">Канальный уровень</li>
-      </ul>
-      <p class="lead">Протоколы этих уровней полностью реализуют функциональные возможности модели OSI. На стеке протоколов TCP/IP построено всё взаимодействие пользователей в IP-сетях. Стек является независимым от физической среды передачи данных, благодаря чему, в частности, обеспечивается полностью прозрачное взаимодействие между проводными и беспроводными сетями.</p>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <h2>Слайды</h2>
-        <div id="carouselExampleControls" class="carousel slide mt-5 mb-5" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="1.png" alt="Первый слайд">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="2.jpg" alt="Второй слайд">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="3.jpg" alt="Третий слайд">
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">TCP / IP</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Начало</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Описание</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <h1 class="mt-5">Стек протоколов TCP / IP</h1>
+    <p class="lead">TCP/IP — сетевая модель передачи данных, представленных в цифровом виде. Модель описывает способ
+      передачи данных от источника информации к получателю. В модели предполагается прохождение информации через четыре
+      уровня, каждый из которых описывается правилом (протоколом передачи).</p>
+    <h2 class="mt-5">История создания</h2>
+    <p class="lead">Стек протоколов TCP/IP был создан на основе NCP (Network Control Protocol) группой разработчиков под
+      руководством Винтона Серфа в 1972 году. В июле 1976 года Винт Серф и Боб Кан впервые продемонстрировали передачу
+      данных с использованием TCP по трём различным сетям. Пакет прошел по следующему маршруту: Сан-Франциско — Лондон —
+      Университет Южной Калифорнии. К концу своего путешествия пакет проделал 150 тысяч км, не потеряв ни одного бита. В
+      1978 году Серф, Джон Постел и Дэнни Кохэн[en] решили выделить в TCP две отдельные функции: TCP и IP (англ.
+      Internet Protocol, межсетевой протокол). TCP был ответственен за разбивку сообщения на датаграммы (англ. datagram)
+      и соединение их в конечном пункте отправки. IP отвечал за передачу (с контролем получения) отдельных датаграмм.
+      Вот так родился современный протокол Интернета. А с 1 января 1983 года ARPANET перешла на новый протокол. Этот
+      день принято считать официальной датой рождения Интернета.</p>
+    <h2 class="mt-5">Формальная спецификация и стандарты</h2>
+    <p class="lead">Технические стандарты, лежащие в основе набора TCP/IP протоколов, были переданы Инженерному совету
+      Интернета (IETF). Характеристикой архитектуры Internet Protocol Suite является широкое разделение на рабочие
+      области для протоколов, составляющих его основную функциональность. Определяющей спецификацией пакета является RFC
+      1122, которая в общих чертах описывает четыре уровня абстракции. Они выдержали испытание временем, поскольку IETF
+      никогда не изменяла эту структуру. Как таковая модель сети TCP/IP предшествует модели OSI, более всеобъемлющей
+      эталонной структуре для общих сетевых систем.</p>
+    <h2 class="mt-5">Уровни стека TCP/IP</h2>
+    <ul class="list-group mt-5 mb-5">
+      <li class="list-group-item active">Стек протоколов TCP/IP включает в себя четыре уровня:</li>
+      <li class="list-group-item">Прикладной уровень</li>
+      <li class="list-group-item">Транспортный уровень</li>
+      <li class="list-group-item">Межсетевой уровень</li>
+      <li class="list-group-item">Канальный уровень</li>
+    </ul>
+    <p class="lead">Протоколы этих уровней полностью реализуют функциональные возможности модели OSI. На стеке
+      протоколов TCP/IP построено всё взаимодействие пользователей в IP-сетях. Стек является независимым от физической
+      среды передачи данных, благодаря чему, в частности, обеспечивается полностью прозрачное взаимодействие между
+      проводными и беспроводными сетями.</p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <h2>Слайды</h2>
+      <div id="carouselExampleControls" class="carousel slide mt-5 mb-5" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="1.png" alt="Первый слайд">
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="2.jpg" alt="Второй слайд">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="3.jpg" alt="Третий слайд">
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <h2>Сравнение с моделью OSI</h2>
-      <p class="lead">Три верхних уровня в модели OSI, то есть уровень приложения, уровень представления и уровень сеанса, отдельно не различаются в модели TCP/IP[4], которая имеет только прикладной уровень над транспортным уровнем. Хотя некоторые чистые приложения протокола OSI, такие как X.400, также объединяют их, нет требования, чтобы стек протокола TCP/IP должен накладывать монолитную архитектуру над транспортным уровнем. Например, протокол NFS-приложений работает через протокол представления данных External Data Representation (XDR), который, в свою очередь, работает по протоколу Remote Procedure Call (RPC). RPC обеспечивает надежную передачу данных, поэтому он может безопасно использовать транспорт UDP с максимальным усилием.
+      <p class="lead">Три верхних уровня в модели OSI, то есть уровень приложения, уровень представления и уровень
+        сеанса, отдельно не различаются в модели TCP/IP[4], которая имеет только прикладной уровень над транспортным
+        уровнем. Хотя некоторые чистые приложения протокола OSI, такие как X.400, также объединяют их, нет требования,
+        чтобы стек протокола TCP/IP должен накладывать монолитную архитектуру над транспортным уровнем. Например,
+        протокол NFS-приложений работает через протокол представления данных External Data Representation (XDR),
+        который, в свою очередь, работает по протоколу Remote Procedure Call (RPC). RPC обеспечивает надежную передачу
+        данных, поэтому он может безопасно использовать транспорт UDP с максимальным усилием.
 
-        Различные авторы интерпретировали модель TCP/IP по-разному и не согласны с тем, что уровень связи или вся модель TCP/IP охватывает проблемы первого уровня модели OSI (физический уровень) или предполагается, что аппаратный уровень ниже уровня канала.
-        
-        Несколько авторов попытались включить слои 1 и 2 модели OSI в модель TCP/IP, поскольку они обычно упоминаются в современных стандартах (например, IEEE и ITU). Это часто приводит к модели с пятью слоями, где уровень связи или уровень доступа к сети разделяются на слои 1 и 2 модели OSI.
-        
-        Усилия по разработке протокола IETF не касаются строгого расслоения. Некоторые из его протоколов могут не соответствовать чисто модели OSI, хотя RFC иногда ссылаются на неё и часто используют старые номера уровня OSI. IETF неоднократно заявлял, что разработка интернет-протокола и архитектуры не должна соответствовать требованиям OSI. В RFC 3439, адресованном интернет-архитектуре, содержится раздел, озаглавленный «Слой, считающийся вредным».
-        
-        Например, считается, что уровни сеанса и представления пакета OSI включены в прикладной уровень пакета TCP/IP. Функциональность уровня сеанса можно найти в протоколах, таких как HTTP и SMTP, и более очевидна в таких протоколах, как Telnet и протокол инициации сеанса (SIP). Функциональность уровня сеанса также реализована с нумерацией портов протоколов TCP и UDP, которые охватывают транспортный уровень в наборе TCP/IP. Функции уровня представления реализуются в приложениях TCP/IP со стандартом MIME при обмене данными.
-        
-        Конфликты очевидны также в оригинальной модели OSI, ISO 7498, когда не рассматриваются приложения к этой модели, например, ISO 7498/4 Management Framework или ISO 8648 Internal Organization of the Network layer (IONL). Когда рассматриваются документы IONL и Management Framework, ICMP и IGMP определяются как протоколы управления уровнем для сетевого уровня. Аналогичным образом IONL предоставляет структуру для «зависимых от подсетей объектов конвергенции», таких как ARP и RARP.
-        
-        Протоколы IETF могут быть инкапсулированы рекурсивно, о чем свидетельствуют протоколы туннелирования, такие как Инкапсуляция общей маршрутизации (GRE). GRE использует тот же механизм, который OSI использует для туннелирования на сетевом уровне. Существуют разногласия в том, как вписать модель TCP/IP в модель OSI, поскольку уровни в этих моделях не совпадают.
-        
-        К тому же, модель OSI не использует дополнительный уровень — «Internetworking» — между канальным и сетевым уровнями. Примером спорного протокола может быть ARP или STP.
-        
+        Различные авторы интерпретировали модель TCP/IP по-разному и не согласны с тем, что уровень связи или вся модель
+        TCP/IP охватывает проблемы первого уровня модели OSI (физический уровень) или предполагается, что аппаратный
+        уровень ниже уровня канала.
+
+        Несколько авторов попытались включить слои 1 и 2 модели OSI в модель TCP/IP, поскольку они обычно упоминаются в
+        современных стандартах (например, IEEE и ITU). Это часто приводит к модели с пятью слоями, где уровень связи или
+        уровень доступа к сети разделяются на слои 1 и 2 модели OSI.
+
+        Усилия по разработке протокола IETF не касаются строгого расслоения. Некоторые из его протоколов могут не
+        соответствовать чисто модели OSI, хотя RFC иногда ссылаются на неё и часто используют старые номера уровня OSI.
+        IETF неоднократно заявлял, что разработка интернет-протокола и архитектуры не должна соответствовать требованиям
+        OSI. В RFC 3439, адресованном интернет-архитектуре, содержится раздел, озаглавленный «Слой, считающийся
+        вредным».
+
+        Например, считается, что уровни сеанса и представления пакета OSI включены в прикладной уровень пакета TCP/IP.
+        Функциональность уровня сеанса можно найти в протоколах, таких как HTTP и SMTP, и более очевидна в таких
+        протоколах, как Telnet и протокол инициации сеанса (SIP). Функциональность уровня сеанса также реализована с
+        нумерацией портов протоколов TCP и UDP, которые охватывают транспортный уровень в наборе TCP/IP. Функции уровня
+        представления реализуются в приложениях TCP/IP со стандартом MIME при обмене данными.
+
+        Конфликты очевидны также в оригинальной модели OSI, ISO 7498, когда не рассматриваются приложения к этой модели,
+        например, ISO 7498/4 Management Framework или ISO 8648 Internal Organization of the Network layer (IONL). Когда
+        рассматриваются документы IONL и Management Framework, ICMP и IGMP определяются как протоколы управления уровнем
+        для сетевого уровня. Аналогичным образом IONL предоставляет структуру для «зависимых от подсетей объектов
+        конвергенции», таких как ARP и RARP.
+
+        Протоколы IETF могут быть инкапсулированы рекурсивно, о чем свидетельствуют протоколы туннелирования, такие как
+        Инкапсуляция общей маршрутизации (GRE). GRE использует тот же механизм, который OSI использует для
+        туннелирования на сетевом уровне. Существуют разногласия в том, как вписать модель TCP/IP в модель OSI,
+        поскольку уровни в этих моделях не совпадают.
+
+        К тому же, модель OSI не использует дополнительный уровень — «Internetworking» — между канальным и сетевым
+        уровнями. Примером спорного протокола может быть ARP или STP.
+
         Вот как традиционно протоколы TCP/IP вписываются в модель OSI:</p>
       <h2>Регистрация на сайте (с модальным окном)</h2>
       <form>
         <div class="form-group mt-5 mb-5">
           <label for="exampleInputEmail1">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="exampleInputEmail1">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Пароль</label>
@@ -105,10 +151,12 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Согласен со всеми условиями</label>
         </div>
-        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Регистрация</button>
+        <button type="submit" class="btn btn-primary" data-toggle="modal"
+          data-target="#exampleModal">Регистрация</button>
       </form>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -127,9 +175,16 @@
           </div>
         </div>
       </div>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
- </body>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
